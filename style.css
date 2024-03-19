@@ -48,6 +48,7 @@ body{
 .dmy-con{
     color: var(--Smokeygrey);
     font-weight: 700;
+    font-size: 10px;
     display: flex;
     gap: 2rem; 
     margin-bottom: 3rem;
