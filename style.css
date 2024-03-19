@@ -79,7 +79,7 @@ input:hover{
 
 
 
-#er-msg{
+.er-msg{
     font-size: 12px;
     padding: .5rem 0;
     color: var(--Lightred);

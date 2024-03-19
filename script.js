@@ -9,7 +9,7 @@ const submit_Btn = document.getElementById('submit-Btn')
 submit_Btn.addEventListener('click', com_age)
 
 function com_age(){
-    const testme = document.querySelectorAll('#test');
+    const testme = document.querySelectorAll('.test');
     const d = new Date();
     
     
