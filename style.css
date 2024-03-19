@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap');
+
+:root{
+    
+ /* Primary */
+
+--Purple: hsl(259, 100%, 65%);
+--Lightred: hsl(0, 100%, 67%);
+
+ /* Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Offwhite: hsl(0, 0%, 94%);
+--Lightgrey: hsl(0, 0%, 86%);
+--Smokeygrey: hsl(0, 1%, 44%);
+--Offblack: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    font-family: 'Poppins', san serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Lightgrey);
+    height: 100vh;
+   margin: 2rem;
+   
+}
+
+.age-calc{
+    display: flex;
+    flex-direction: column;
+    width: 845px;
+    padding: 3.5rem;
+    margin: 2rem;
+    
+    background-color: var(--White);
+    border-radius: 10px 10px 200px 10px;
+}
+.dmy-con{
+    color: var(--Smokeygrey);
+    font-weight: 700;
+    display: flex;
+    gap: 2rem; 
+    margin-bottom: 3rem;
+    letter-spacing: .2rem;
+}
+
+
+input{
+    font-style: normal;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 32px;
+    border:solid 1px var(--Offwhite);
+    padding: 1.5rem 1rem 1.5rem 1.5rem;
+    width: 160px;
+    height: 70px;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+input:hover{
+   border-color: var(--Purple);
+
+}
+
+
+
+
+
+
+
+
+#er-msg{
+    font-size: 12px;
+    padding: .5rem 0;
+    color: var(--Lightred);
+
+    letter-spacing: normal;
+    font-style: italic;
+    font-weight: lighter;
+}
+.ymd-con{
+    position: relative;
+    border-top: solid 1px var(--Lightgrey);
+
+    padding-top: 3rem;
+  
+  
+}
+
+.ymd-con img{
+    position: absolute;
+    background-color: var(--Purple);
+    padding: 1.5rem;
+    width: 95px;
+    top: -45px;
+    right: 0;
+
+    border-radius: 50%;
+}
+img:hover{
+    cursor: pointer;
+    background-color: var(--Offblack);
+}
+.ymd-con p  {
+    font-size: 105px;
+    font-weight:bolder;
+    font-style:italic;
+   line-height: 7rem;
+}
+span{
+    color: var(--Purple);
+}
+@media screen and (max-width: 900px){
+
+    .ymd-con img{
+       right: 38%;
+       width: 65px;
+       padding: 1rem;
+       top: -35px;
+    }
+    .age-calc{
+       
+        width: auto;
+        padding:  3.5rem 2rem ;
+        border-radius: 10px 10px 100px 10px;
+        
+       
+    }
+    .dmy-con{
+        font-size: 16px;
+        gap: 1rem; 
+        
+    }
+    .dmy-con p{
+        font-size: 12px;
+       
+        
+    }
+    input{
+        font-size: 15px;
+        width: 80px;
+        height: 45px;
+        justify-content: space-between;
+        padding:1rem 0 1rem 1rem;
+    }
+   
+    .ymd-con p  {
+        font-size: 50px;
+        line-height: 3.5rem;
+        
+    }
+    #er-msg{
+        font-size: 8px;
+    }
+}
