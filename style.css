@@ -137,16 +137,13 @@ span{
         
        
     }
-    .dmy-con{
-        font-size: 5px;
+   
+     .dmy-con h1{
+        font-size: 12px;
         gap: 1rem; 
         
     }
-    .dmy-con p{
-        font-size: 12px;
-       
-        
-    }
+ 
     input{
         font-size: 15px;
         width: 80px;
@@ -160,7 +157,7 @@ span{
         line-height: 3.5rem;
         
     }
-    #er-msg{
-        font-size: 4px;
+    .er-msg{
+        font-size: 8px;
     }
 }
