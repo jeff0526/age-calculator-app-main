@@ -118,9 +118,7 @@ function com_age(){
 
             }
         } else if(newmnth==mm && newdd >=dd){
-            // resy.innerHTML = d.getFullYear() - yy ;
-            // resm.innerHTML = 0 ;
-            // resd.innerHTML = newdd - dd;
+            
             var numb = 0;
             var numbm = 0;
             var numbd = 0;
@@ -128,15 +126,13 @@ function com_age(){
             let targetm = newmnth- mm;
             let targetd = newdd - dd  ;
            
-            
+            resm.innerHTML = 0 ;
                 let myvar= setInterval(myinertval,100)
                 function myinertval(){
                     if (numb <target){
                     resy.innerHTML = ++numb;
                 }
-                if (numbm <targetm){
-                    resm.innerHTML = ++numbm;
-                }
+              
                 if (numbd <targetd){
                     resd.innerHTML = ++numbd;
                 }
@@ -144,9 +140,9 @@ function com_age(){
             }
 
         }  else if(newmnth==mm && newdd < dd){
-            // resy.innerHTML = d.getFullYear() - yy ;
-            // resm.innerHTML = 0 ;
-            // resd.innerHTML = newdd - dd;
+            
+            
+          
             var numb = 0;
             var numbm = 0;
             var numbd = 0;
@@ -154,15 +150,13 @@ function com_age(){
             let targetm = newmnth- mm;
             let targetd = 30 - (dd - newdd)  ;
            
-            
+            resm.innerHTML = 0 ;
                 let myvar= setInterval(myinertval,100)
                 function myinertval(){
                     if (numb <target){
                     resy.innerHTML = ++numb;
                 }
-                if (numbm <targetm){
-                    resm.innerHTML = ++numbm;
-                }
+               
                 if (numbd <targetd){
                     resd.innerHTML = ++numbd;
                 }
